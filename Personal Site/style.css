@@ -1,0 +1,188 @@
+#main-self-photo
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    opacity: 0.85;
+    z-index: 0;
+    background-color: rgba(253, 158, 62, 0.944)
+    
+
+}
+
+
+
+#Home
+{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: -120px;
+    margin-left: 20px;
+    z-index: 1;
+    color: rgb(0, 0, 0); /* or any bright color */
+    font-weight: bold;
+    filter: brightness(150%); /* Adjust the percentage as needed */
+
+    
+}
+/*specifically for typewriter effect */
+.typed-out {
+    overflow: hidden;
+    border-right: .15em solid rgb(0, 0, 0);
+    white-space: nowrap;
+    font-size: 1.6rem;
+    animation: typing 1s steps(20, end) forwards, blink 1s infinite;
+    font-family: Tahoma, sans-serif;
+    filter: brightness(150%); /* Adjust the percentage as needed */
+}
+
+#nametag
+{
+    color: white; /* or any bright color */
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes erasing {
+    from { width: 100%; }
+    to { width: 0; }
+}
+
+@keyframes blink {
+    0% { border-color: transparent; }
+    50% { border-color: rgb(0, 0, 0); }
+    100% { border-color: transparent; }
+}
+
+.cursor {
+    display: inline-block;
+}
+
+
+/* for Flexbox navbar on the left side of the screen */
+
+.sidebar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    width: 250px;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;;
+    z-index: 1000;
+}
+
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 20px;
+    text-align: Left;
+    display: flex; /* Use flexbox to align items */
+    align-items: center;
+}
+
+.sidebar ul li a {
+    color: #D3D3D3;
+    text-decoration: none;
+    display: inline-block; 
+    font-family: Tahoma, sans-serif;
+    margin-left: 10px;
+    outline: none;
+}
+.sidebar ul li img { /* make sure to put in copyright stuff soon */
+   width: 20px;
+   filter: invert(87%); /* Invert colors */
+
+}
+.sidebar ul li:nth-last-child(2) img { /*Target 2nd to last icon  */
+    width: 26px;
+    filter: invert(87%); /* Invert colors */
+ 
+ }
+
+ .sidebar ul li:nth-last-child(2) a { /*Target 2nd to last icon  */
+    margin-left: 7px;
+ }
+
+ .sidebar ul li:last-child img { /*Target 2nd to last icon  */
+    width: 31px;
+    filter: invert(87%); /* Invert colors */
+ 
+ }
+ .sidebar ul li:last-child a {
+    margin-left: 4px;
+ }
+
+
+
+.sidebar ul li a:hover {
+    color: white;
+}
+
+
+#nametag
+{
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 15px;
+    color: #D3D3D3;
+
+}
+
+
+
+#main-content
+{
+    margin-left: 250px;
+}
+
+h2
+{
+    font-family: Tahoma, sans-serif; 
+    
+}
+
+
+
+
+
+#self-portait
+{
+    width: 110px;
+    margin-left: 62px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 8px solid rgb(65, 65, 65);
+    
+
+}
+.pdf {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4 / 3;
+    border: none;
+}

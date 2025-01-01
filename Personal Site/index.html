@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyle Arnold Portfolio 2024</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<!--Sidebar Section--> 
+<div class="grid-container">
+    <nav class="sidebar grid-item">
+        <ul>
+            <img id="self-portait" src="images/self-portait-circle.jpg" alt="Kyle Arnold's Portrait">
+            <h3 id="nametag">Kyle Arnold</h3>
+            <li> <img src="images\Icons\home_263115.png" alt="Home Icon"> <a href="#main-self-photo">Home</a></li>
+            <li> <img src="images\Icons\profile-user_64572.png" alt="Profile Icon"> <a href="#Profile">Profile</a></li>
+            <li> <img src="images\Icons\document_3914193.png" alt="Resume Icon"> <a href="#Resume">Resume</a></li>
+            <li id ="background"> <img src="images\Icons\184_-_3_-_Coding_on_screen.jpg" alt="Projects Icon"> <a href="#Projects">Projects</a></li>
+            <li id ="background"> <img src="images\Icons\vecteezy_mail-email-icon-template-black-color-editable-mail-email_6697974.jpg" alt="Contact Icon"> <a href="#Contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+<!--Blinking Cursor Section--> 
+<div id="main-content">
+    <div class="grid-item">
+    <img id="main-self-photo" src="./images/ArnoNP0103art.JPG" alt="Kyle Arnold" draggable="false"/>
+    <h1 id="Home" class="NameTag" >Kyle Arnold</h1>
+    <div class="cursor">
+        <div class="typed-out">
+            <span class="text" data-text="Software Developer, Problem Solver, Mathematician"></span>
+        </div>
+    </div>
+</div>
+  
+    <!--Profile Section--> 
+    <div id="Profile" class="grid-item"> 
+        <h2>Profile</h2>
+        <h3>Mission Statement</h3>
+        <p id="mission-statement">
+            As a passionate and determined software engineer, my mission is to leverage my educational background in computer science and 
+            computational mathematics to develop innovative solutions that drive technical advancement. With a strong foundation in data structures, algorithms,
+            and mathematical modeling, I aim to contribute to development of cutting edge technologies that drive innovation. I am committed to continuously learning and 
+            applying the best practices in software development, while encouraging collaboration and teamwork to contribute to projects that solve real-world problems. 
+        </p>
+        <!--Education Section--> 
+        <h3 >Education</h3>
+        <ul id="Schools-List">
+            <li>College: Colorado State University</li>
+            <li>Degree: Bachelors of Science, Computer Science (In Progress)</li>
+            <li>Degree: Bacheolors of Science, Computational Mathematics (In Progress)</li>
+            <li>Date: 2023-2026 (Expected)</li>
+            <li>GPA: 4.0</li>
+            <li>Location: Fort Collins, Colorado</li>
+            <li>College: University of Colorado Bounder</li>
+            <li>Degree: Bachelors of Science, Computer Science</li>
+            <li>Date: 2022-2023</li>
+            <li>Location: Boulder, Colorado</li>
+        </ul>    
+     </div>
+            <!--Skills Section--> 
+            <div id="Skills" class="grid-item"> 
+                <h3>Skills</h3>
+                <h3>Languages</h3>
+                <ul><li>HTML</li>
+                    <li>CSS</li>
+                    <li>C</li>
+                    <li>JAVA</li>
+                    <li>JAVASCRIPT</li>
+                    <li>liYTHON</li>
+                    <li>C++</li>
+                    <li>SQL</li>
+                    <li>R</li>
+                    <li>MATLAB</li>
+                    <li>ADD MORE HERE</li>
+                </ul>
+                <h3>Key</h3>
+                <ul><li>Data Structures</li>
+                    <li>Operating Systems</li>
+                    <li>Software Engineering Principles</li>
+                    <li>Agile Methodologies</li>
+                    <li>Machine Learning Principles</li>
+                    <li>Numerical Analysis</li>
+                    <li>ADD MORE HERE</li>
+            </div>
+    
+        
+           
+             <!--Resume Section--> 
+            <div id="Resume" class="grid-item">
+                <h2>Resume</h2> 
+                <!-- Use an iframe to embed the PDF -->
+                <!-- NOTE: Does not work with internal preview but it does work when launching in browser -->
+                <iframe src="Documents/Kyle_Arnold_Resume_December_2024.pdf" width="100%" height="500px" style="border: none;"></iframe>
+            </div>
+            
+            <div id="Portfolio" class="grid-item"> 
+                <h2>Portfolio</h2>
+            </div>
+            
+             <!--Contact Me Section -->
+            <div id="Contact" class="grid-item"> 
+                <form action="action_page.php">
+                <h2>Contact Me</h2>
+            
+                <label for="firstName">First Name</label>
+                <input type="text" id="fname" name="firstNameame" placeholder="Your name...">
+                
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lname" name="lastName" placeholder="Your last name...">
+                
+                <label for="emailAddress">Email</label>
+                <input type="text" id="email" name="emailAddress" placeholder="Email...">
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject...">
+
+                <label for="message">Body</label>
+                <textarea id="message" name="message" placeholder="Write message here..." style="height:200px"></textarea>
+                
+                <input type="submit" value="Submit">
+            </form>
+            </div>
+            
+
+
+            
+        </div>
+    
+    
+</div>
+
+
+<script src="./script.js"></script>
+
+
+</body>
+</html>
+
+
