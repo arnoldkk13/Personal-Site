@@ -45,7 +45,65 @@
     font-weight: bold;
 }
 
+#Projects
+{
+	padding: 40px;
+	background-color: #f9f9f9;
+	text-align: center;
+}
 
+.project-card {
+	width:300px;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0,0,0,.1);
+	overflow: hidden;
+	background-color: white;
+	transition: transform .2s, box-shadow .2s;
+}
+.project-card:hover
+{
+	transform: translateY(-5px);
+	box-shadow: 0 4px 6px rgba(0,0,0,.2);
+
+}
+.project-image
+{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.project-title
+{
+	font-size: 1.25rem;
+	font-weight: bold;
+	margin: 16px 16px 8px;
+	color: black;
+}
+.project-description
+{
+	font-size: .9rem;
+	margin: 0 16px 16px;
+	color: #555;
+	line-height: 1.4;
+}
+.project-link
+{
+	display: inline-block;
+	margin: 0 16px 16px;
+	padding: 8px 16px;
+	border-radius: 4px;
+	background-color: grey;
+	color: white;
+	font-size: .9rem;
+	font-weight: bold;
+	transition: background-color .2s;
+}
+
+
+.project-link:hover {
+	background-color: rgb(178, 178, 178);
+  }
 
 
 
